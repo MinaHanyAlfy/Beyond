@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5DB54CF00BBFAA5446437654 /* Pods_Beyond.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FAC504A37F4B2C6CD38618F /* Pods_Beyond.framework */; };
+		7DAAED899B44CD367BC818AB /* Pods_Beyond_BeyondUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E884CF608F482FA41C50D5 /* Pods_Beyond_BeyondUITests.framework */; };
+		7F2ECA41292D543E0098BD0B /* TripleCollageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2ECA40292D543E0098BD0B /* TripleCollageView.swift */; };
+		7F41C973292BD46A00179F78 /* FilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F41C972292BD46A00179F78 /* FilterViewModel.swift */; };
+		7F41C977292C143700179F78 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F41C976292C143700179F78 /* Filter.swift */; };
+		7F41C97A292C16CB00179F78 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F41C979292C16CB00179F78 /* Category.swift */; };
+		7F41C983292C24E600179F78 /* FilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F41C981292C24E600179F78 /* FilterCollectionViewCell.swift */; };
+		7F41C984292C24E600179F78 /* FilterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F41C982292C24E600179F78 /* FilterCollectionViewCell.xib */; };
 		7F70182C292ABE4900517EAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F70182B292ABE4900517EAA /* AppDelegate.swift */; };
-		7F70182E292ABE4900517EAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F70182D292ABE4900517EAA /* SceneDelegate.swift */; };
 		7F701830292ABE4900517EAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F70182F292ABE4900517EAA /* ViewController.swift */; };
 		7F701833292ABE4900517EAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F701831292ABE4900517EAA /* Main.storyboard */; };
 		7F701836292ABE4900517EAA /* Beyond.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F701834292ABE4900517EAA /* Beyond.xcdatamodeld */; };
@@ -17,6 +24,11 @@
 		7F701846292ABE4B00517EAA /* BeyondTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F701845292ABE4B00517EAA /* BeyondTests.swift */; };
 		7F701850292ABE4B00517EAA /* BeyondUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F70184F292ABE4B00517EAA /* BeyondUITests.swift */; };
 		7F701852292ABE4B00517EAA /* BeyondUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F701851292ABE4B00517EAA /* BeyondUITestsLaunchTests.swift */; };
+		7F701863292AC1F000517EAA /* DoubleCollageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F701862292AC1F000517EAA /* DoubleCollageView.swift */; };
+		7F701868292AE2F600517EAA /* CollageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F701867292AE2F600517EAA /* CollageViewController.swift */; };
+		7F70186A292AE30600517EAA /* VideoCollectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F701869292AE30600517EAA /* VideoCollectorViewController.swift */; };
+		7F70186C292AE31500517EAA /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F70186B292AE31500517EAA /* FilterViewController.swift */; };
+		F25E7FE65CF6C07A52B854B9 /* Pods_BeyondTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88EC9978DF31D15DB7701CC6 /* Pods_BeyondTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +49,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		080760F665B54BF5C0AB4C4D /* Pods-Beyond.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beyond.debug.xcconfig"; path = "Target Support Files/Pods-Beyond/Pods-Beyond.debug.xcconfig"; sourceTree = "<group>"; };
+		302CB3F11DC229C7D204221F /* Pods-Beyond.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beyond.release.xcconfig"; path = "Target Support Files/Pods-Beyond/Pods-Beyond.release.xcconfig"; sourceTree = "<group>"; };
+		49D788D0482D771233C69F6A /* Pods-Beyond-BeyondUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beyond-BeyondUITests.debug.xcconfig"; path = "Target Support Files/Pods-Beyond-BeyondUITests/Pods-Beyond-BeyondUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5FAC504A37F4B2C6CD38618F /* Pods_Beyond.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beyond.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6334411CC44AC679AD4E5354 /* Pods-Beyond-BeyondUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beyond-BeyondUITests.release.xcconfig"; path = "Target Support Files/Pods-Beyond-BeyondUITests/Pods-Beyond-BeyondUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7F2ECA40292D543E0098BD0B /* TripleCollageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripleCollageView.swift; sourceTree = "<group>"; };
+		7F41C972292BD46A00179F78 /* FilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewModel.swift; sourceTree = "<group>"; };
+		7F41C976292C143700179F78 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		7F41C979292C16CB00179F78 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		7F41C981292C24E600179F78 /* FilterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCollectionViewCell.swift; sourceTree = "<group>"; };
+		7F41C982292C24E600179F78 /* FilterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterCollectionViewCell.xib; sourceTree = "<group>"; };
 		7F701828292ABE4900517EAA /* Beyond.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beyond.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F70182B292ABE4900517EAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7F70182D292ABE4900517EAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7F70182F292ABE4900517EAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7F701832292ABE4900517EAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7F701835292ABE4900517EAA /* Beyond.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Beyond.xcdatamodel; sourceTree = "<group>"; };
@@ -51,6 +73,14 @@
 		7F70184B292ABE4B00517EAA /* BeyondUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeyondUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F70184F292ABE4B00517EAA /* BeyondUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondUITests.swift; sourceTree = "<group>"; };
 		7F701851292ABE4B00517EAA /* BeyondUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7F701862292AC1F000517EAA /* DoubleCollageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleCollageView.swift; sourceTree = "<group>"; };
+		7F701867292AE2F600517EAA /* CollageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollageViewController.swift; sourceTree = "<group>"; };
+		7F701869292AE30600517EAA /* VideoCollectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectorViewController.swift; sourceTree = "<group>"; };
+		7F70186B292AE31500517EAA /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		83E884CF608F482FA41C50D5 /* Pods_Beyond_BeyondUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beyond_BeyondUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88EC9978DF31D15DB7701CC6 /* Pods_BeyondTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeyondTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E2535A2ABAD5B710A015472 /* Pods-BeyondTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeyondTests.debug.xcconfig"; path = "Target Support Files/Pods-BeyondTests/Pods-BeyondTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CC3EB6763F8A4B4598F17F1D /* Pods-BeyondTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeyondTests.release.xcconfig"; path = "Target Support Files/Pods-BeyondTests/Pods-BeyondTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DB54CF00BBFAA5446437654 /* Pods_Beyond.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F25E7FE65CF6C07A52B854B9 /* Pods_BeyondTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +104,76 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DAAED899B44CD367BC818AB /* Pods_Beyond_BeyondUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B0C6B03738990C7C1E39D4F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				080760F665B54BF5C0AB4C4D /* Pods-Beyond.debug.xcconfig */,
+				302CB3F11DC229C7D204221F /* Pods-Beyond.release.xcconfig */,
+				49D788D0482D771233C69F6A /* Pods-Beyond-BeyondUITests.debug.xcconfig */,
+				6334411CC44AC679AD4E5354 /* Pods-Beyond-BeyondUITests.release.xcconfig */,
+				8E2535A2ABAD5B710A015472 /* Pods-BeyondTests.debug.xcconfig */,
+				CC3EB6763F8A4B4598F17F1D /* Pods-BeyondTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7F41C970292BD44700179F78 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7F41C971292BD45500179F78 /* FilterViewModel */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7F41C971292BD45500179F78 /* FilterViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7F41C972292BD46A00179F78 /* FilterViewModel.swift */,
+			);
+			path = FilterViewModel;
+			sourceTree = "<group>";
+		};
+		7F41C974292C141E00179F78 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7F41C978292C16AE00179F78 /* Categories */,
+				7F41C975292C142600179F78 /* Filter */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7F41C975292C142600179F78 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				7F41C976292C143700179F78 /* Filter.swift */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		7F41C978292C16AE00179F78 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				7F41C979292C16CB00179F78 /* Category.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		7F41C97B292C249900179F78 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				7F41C981292C24E600179F78 /* FilterCollectionViewCell.swift */,
+				7F41C982292C24E600179F78 /* FilterCollectionViewCell.xib */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
 		7F70181F292ABE4900517EAA = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +181,8 @@
 				7F701844292ABE4B00517EAA /* BeyondTests */,
 				7F70184E292ABE4B00517EAA /* BeyondUITests */,
 				7F701829292ABE4900517EAA /* Products */,
+				7B0C6B03738990C7C1E39D4F /* Pods */,
+				E31629EE5172E28A0F7D2397 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +199,13 @@
 		7F70182A292ABE4900517EAA /* Beyond */ = {
 			isa = PBXGroup;
 			children = (
-				7F70182B292ABE4900517EAA /* AppDelegate.swift */,
-				7F70182D292ABE4900517EAA /* SceneDelegate.swift */,
+				7F41C974292C141E00179F78 /* Model */,
+				7F41C970292BD44700179F78 /* ViewModel */,
+				7F70186D292AE33200517EAA /* Utilites */,
+				7F701860292AC1C500517EAA /* View */,
+				7F70185E292ABFBE00517EAA /* Controllers */,
 				7F70182F292ABE4900517EAA /* ViewController.swift */,
-				7F701831292ABE4900517EAA /* Main.storyboard */,
-				7F701837292ABE4B00517EAA /* Assets.xcassets */,
-				7F701839292ABE4B00517EAA /* LaunchScreen.storyboard */,
 				7F70183C292ABE4B00517EAA /* Info.plist */,
-				7F701834292ABE4900517EAA /* Beyond.xcdatamodeld */,
 			);
 			path = Beyond;
 			sourceTree = "<group>";
@@ -130,6 +227,81 @@
 			path = BeyondUITests;
 			sourceTree = "<group>";
 		};
+		7F70185E292ABFBE00517EAA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7F701866292AE2D200517EAA /* CollageViewController */,
+				7F701865292AE2BC00517EAA /* VideoCollectorViewController */,
+				7F701864292AE2B000517EAA /* FilterViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7F701860292AC1C500517EAA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7F41C97B292C249900179F78 /* CollectionViewCell */,
+				7F701831292ABE4900517EAA /* Main.storyboard */,
+				7F701839292ABE4B00517EAA /* LaunchScreen.storyboard */,
+				7F701861292AC1CE00517EAA /* CollageView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7F701861292AC1CE00517EAA /* CollageView */ = {
+			isa = PBXGroup;
+			children = (
+				7F701862292AC1F000517EAA /* DoubleCollageView.swift */,
+				7F2ECA40292D543E0098BD0B /* TripleCollageView.swift */,
+			);
+			name = CollageView;
+			path = "../New Group/CollageView";
+			sourceTree = "<group>";
+		};
+		7F701864292AE2B000517EAA /* FilterViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7F70186B292AE31500517EAA /* FilterViewController.swift */,
+			);
+			path = FilterViewController;
+			sourceTree = "<group>";
+		};
+		7F701865292AE2BC00517EAA /* VideoCollectorViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7F701869292AE30600517EAA /* VideoCollectorViewController.swift */,
+			);
+			path = VideoCollectorViewController;
+			sourceTree = "<group>";
+		};
+		7F701866292AE2D200517EAA /* CollageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7F701867292AE2F600517EAA /* CollageViewController.swift */,
+			);
+			path = CollageViewController;
+			sourceTree = "<group>";
+		};
+		7F70186D292AE33200517EAA /* Utilites */ = {
+			isa = PBXGroup;
+			children = (
+				7F70182B292ABE4900517EAA /* AppDelegate.swift */,
+				7F701834292ABE4900517EAA /* Beyond.xcdatamodeld */,
+				7F701837292ABE4B00517EAA /* Assets.xcassets */,
+			);
+			path = Utilites;
+			sourceTree = "<group>";
+		};
+		E31629EE5172E28A0F7D2397 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FAC504A37F4B2C6CD38618F /* Pods_Beyond.framework */,
+				83E884CF608F482FA41C50D5 /* Pods_Beyond_BeyondUITests.framework */,
+				88EC9978DF31D15DB7701CC6 /* Pods_BeyondTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +309,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F701855292ABE4B00517EAA /* Build configuration list for PBXNativeTarget "Beyond" */;
 			buildPhases = (
+				7BB94009A8D18397DB056870 /* [CP] Check Pods Manifest.lock */,
 				7F701824292ABE4900517EAA /* Sources */,
 				7F701825292ABE4900517EAA /* Frameworks */,
 				7F701826292ABE4900517EAA /* Resources */,
+				5424963772CC8728E7B098C4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +328,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F701858292ABE4B00517EAA /* Build configuration list for PBXNativeTarget "BeyondTests" */;
 			buildPhases = (
+				007A5E6A2172278E718C2EB1 /* [CP] Check Pods Manifest.lock */,
 				7F70183D292ABE4B00517EAA /* Sources */,
 				7F70183E292ABE4B00517EAA /* Frameworks */,
 				7F70183F292ABE4B00517EAA /* Resources */,
@@ -172,9 +347,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F70185B292ABE4B00517EAA /* Build configuration list for PBXNativeTarget "BeyondUITests" */;
 			buildPhases = (
+				71D606D1108D68EDBD4937D4 /* [CP] Check Pods Manifest.lock */,
 				7F701847292ABE4B00517EAA /* Sources */,
 				7F701848292ABE4B00517EAA /* Frameworks */,
 				7F701849292ABE4B00517EAA /* Resources */,
+				608675204D26E1298D5B998D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -236,6 +413,7 @@
 			files = (
 				7F70183B292ABE4B00517EAA /* LaunchScreen.storyboard in Resources */,
 				7F701838292ABE4B00517EAA /* Assets.xcassets in Resources */,
+				7F41C984292C24E600179F78 /* FilterCollectionViewCell.xib in Resources */,
 				7F701833292ABE4900517EAA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,15 +434,126 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		007A5E6A2172278E718C2EB1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BeyondTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5424963772CC8728E7B098C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Beyond/Pods-Beyond-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Beyond/Pods-Beyond-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Beyond/Pods-Beyond-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		608675204D26E1298D5B998D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Beyond-BeyondUITests/Pods-Beyond-BeyondUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Beyond-BeyondUITests/Pods-Beyond-BeyondUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Beyond-BeyondUITests/Pods-Beyond-BeyondUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71D606D1108D68EDBD4937D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Beyond-BeyondUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BB94009A8D18397DB056870 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Beyond-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7F701824292ABE4900517EAA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F2ECA41292D543E0098BD0B /* TripleCollageView.swift in Sources */,
+				7F70186C292AE31500517EAA /* FilterViewController.swift in Sources */,
+				7F41C97A292C16CB00179F78 /* Category.swift in Sources */,
 				7F701836292ABE4900517EAA /* Beyond.xcdatamodeld in Sources */,
+				7F41C973292BD46A00179F78 /* FilterViewModel.swift in Sources */,
+				7F41C983292C24E600179F78 /* FilterCollectionViewCell.swift in Sources */,
 				7F701830292ABE4900517EAA /* ViewController.swift in Sources */,
+				7F701863292AC1F000517EAA /* DoubleCollageView.swift in Sources */,
 				7F70182C292ABE4900517EAA /* AppDelegate.swift in Sources */,
-				7F70182E292ABE4900517EAA /* SceneDelegate.swift in Sources */,
+				7F70186A292AE30600517EAA /* VideoCollectorViewController.swift in Sources */,
+				7F41C977292C143700179F78 /* Filter.swift in Sources */,
+				7F701868292AE2F600517EAA /* CollageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +725,7 @@
 		};
 		7F701856292ABE4B00517EAA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 080760F665B54BF5C0AB4C4D /* Pods-Beyond.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -445,7 +735,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Beyond/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -464,6 +754,7 @@
 		};
 		7F701857292ABE4B00517EAA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 302CB3F11DC229C7D204221F /* Pods-Beyond.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -473,7 +764,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Beyond/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -492,6 +783,7 @@
 		};
 		7F701859292ABE4B00517EAA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E2535A2ABAD5B710A015472 /* Pods-BeyondTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +804,7 @@
 		};
 		7F70185A292ABE4B00517EAA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC3EB6763F8A4B4598F17F1D /* Pods-BeyondTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -532,6 +825,7 @@
 		};
 		7F70185C292ABE4B00517EAA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49D788D0482D771233C69F6A /* Pods-Beyond-BeyondUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -550,6 +844,7 @@
 		};
 		7F70185D292ABE4B00517EAA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6334411CC44AC679AD4E5354 /* Pods-Beyond-BeyondUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
