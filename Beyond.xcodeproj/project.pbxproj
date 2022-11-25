@@ -9,14 +9,16 @@
 /* Begin PBXBuildFile section */
 		5DB54CF00BBFAA5446437654 /* Pods_Beyond.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FAC504A37F4B2C6CD38618F /* Pods_Beyond.framework */; };
 		7DAAED899B44CD367BC818AB /* Pods_Beyond_BeyondUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E884CF608F482FA41C50D5 /* Pods_Beyond_BeyondUITests.framework */; };
-		7F2ECA41292D543E0098BD0B /* TripleCollageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2ECA40292D543E0098BD0B /* TripleCollageView.swift */; };
+		7F15F38D292F58E2009BD8D0 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F15F38C292F58E2009BD8D0 /* UIImage+Extensions.swift */; };
+		7F15F38F292F7F79009BD8D0 /* CollageDoubleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F15F38E292F7F79009BD8D0 /* CollageDoubleView.swift */; };
+		7F15F391292FB807009BD8D0 /* CollageTripleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F15F390292FB807009BD8D0 /* CollageTripleView.swift */; };
+		7F15F3A32930F150009BD8D0 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F15F3A22930F150009BD8D0 /* UICollectionView+Extensions.swift */; };
 		7F41C973292BD46A00179F78 /* FilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F41C972292BD46A00179F78 /* FilterViewModel.swift */; };
 		7F41C977292C143700179F78 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F41C976292C143700179F78 /* Filter.swift */; };
 		7F41C97A292C16CB00179F78 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F41C979292C16CB00179F78 /* Category.swift */; };
 		7F41C983292C24E600179F78 /* FilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F41C981292C24E600179F78 /* FilterCollectionViewCell.swift */; };
 		7F41C984292C24E600179F78 /* FilterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F41C982292C24E600179F78 /* FilterCollectionViewCell.xib */; };
 		7F70182C292ABE4900517EAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F70182B292ABE4900517EAA /* AppDelegate.swift */; };
-		7F701830292ABE4900517EAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F70182F292ABE4900517EAA /* ViewController.swift */; };
 		7F701833292ABE4900517EAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F701831292ABE4900517EAA /* Main.storyboard */; };
 		7F701836292ABE4900517EAA /* Beyond.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F701834292ABE4900517EAA /* Beyond.xcdatamodeld */; };
 		7F701838292ABE4B00517EAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F701837292ABE4B00517EAA /* Assets.xcassets */; };
@@ -24,7 +26,6 @@
 		7F701846292ABE4B00517EAA /* BeyondTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F701845292ABE4B00517EAA /* BeyondTests.swift */; };
 		7F701850292ABE4B00517EAA /* BeyondUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F70184F292ABE4B00517EAA /* BeyondUITests.swift */; };
 		7F701852292ABE4B00517EAA /* BeyondUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F701851292ABE4B00517EAA /* BeyondUITestsLaunchTests.swift */; };
-		7F701863292AC1F000517EAA /* DoubleCollageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F701862292AC1F000517EAA /* DoubleCollageView.swift */; };
 		7F701868292AE2F600517EAA /* CollageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F701867292AE2F600517EAA /* CollageViewController.swift */; };
 		7F70186A292AE30600517EAA /* VideoCollectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F701869292AE30600517EAA /* VideoCollectorViewController.swift */; };
 		7F70186C292AE31500517EAA /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F70186B292AE31500517EAA /* FilterViewController.swift */; };
@@ -54,7 +55,10 @@
 		49D788D0482D771233C69F6A /* Pods-Beyond-BeyondUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beyond-BeyondUITests.debug.xcconfig"; path = "Target Support Files/Pods-Beyond-BeyondUITests/Pods-Beyond-BeyondUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5FAC504A37F4B2C6CD38618F /* Pods_Beyond.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beyond.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6334411CC44AC679AD4E5354 /* Pods-Beyond-BeyondUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beyond-BeyondUITests.release.xcconfig"; path = "Target Support Files/Pods-Beyond-BeyondUITests/Pods-Beyond-BeyondUITests.release.xcconfig"; sourceTree = "<group>"; };
-		7F2ECA40292D543E0098BD0B /* TripleCollageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripleCollageView.swift; sourceTree = "<group>"; };
+		7F15F38C292F58E2009BD8D0 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		7F15F38E292F7F79009BD8D0 /* CollageDoubleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollageDoubleView.swift; sourceTree = "<group>"; };
+		7F15F390292FB807009BD8D0 /* CollageTripleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollageTripleView.swift; sourceTree = "<group>"; };
+		7F15F3A22930F150009BD8D0 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
 		7F41C972292BD46A00179F78 /* FilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewModel.swift; sourceTree = "<group>"; };
 		7F41C976292C143700179F78 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
 		7F41C979292C16CB00179F78 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
@@ -62,7 +66,6 @@
 		7F41C982292C24E600179F78 /* FilterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterCollectionViewCell.xib; sourceTree = "<group>"; };
 		7F701828292ABE4900517EAA /* Beyond.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beyond.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F70182B292ABE4900517EAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7F70182F292ABE4900517EAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7F701832292ABE4900517EAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7F701835292ABE4900517EAA /* Beyond.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Beyond.xcdatamodel; sourceTree = "<group>"; };
 		7F701837292ABE4B00517EAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,7 +76,6 @@
 		7F70184B292ABE4B00517EAA /* BeyondUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeyondUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F70184F292ABE4B00517EAA /* BeyondUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondUITests.swift; sourceTree = "<group>"; };
 		7F701851292ABE4B00517EAA /* BeyondUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		7F701862292AC1F000517EAA /* DoubleCollageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleCollageView.swift; sourceTree = "<group>"; };
 		7F701867292AE2F600517EAA /* CollageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollageViewController.swift; sourceTree = "<group>"; };
 		7F701869292AE30600517EAA /* VideoCollectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectorViewController.swift; sourceTree = "<group>"; };
 		7F70186B292AE31500517EAA /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +124,15 @@
 				CC3EB6763F8A4B4598F17F1D /* Pods-BeyondTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		7F15F38B292F58C5009BD8D0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7F15F38C292F58E2009BD8D0 /* UIImage+Extensions.swift */,
+				7F15F3A22930F150009BD8D0 /* UICollectionView+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		7F41C970292BD44700179F78 /* ViewModel */ = {
@@ -204,7 +215,6 @@
 				7F70186D292AE33200517EAA /* Utilites */,
 				7F701860292AC1C500517EAA /* View */,
 				7F70185E292ABFBE00517EAA /* Controllers */,
-				7F70182F292ABE4900517EAA /* ViewController.swift */,
 				7F70183C292ABE4B00517EAA /* Info.plist */,
 			);
 			path = Beyond;
@@ -251,8 +261,8 @@
 		7F701861292AC1CE00517EAA /* CollageView */ = {
 			isa = PBXGroup;
 			children = (
-				7F701862292AC1F000517EAA /* DoubleCollageView.swift */,
-				7F2ECA40292D543E0098BD0B /* TripleCollageView.swift */,
+				7F15F38E292F7F79009BD8D0 /* CollageDoubleView.swift */,
+				7F15F390292FB807009BD8D0 /* CollageTripleView.swift */,
 			);
 			name = CollageView;
 			path = "../New Group/CollageView";
@@ -285,6 +295,7 @@
 		7F70186D292AE33200517EAA /* Utilites */ = {
 			isa = PBXGroup;
 			children = (
+				7F15F38B292F58C5009BD8D0 /* Extensions */,
 				7F70182B292ABE4900517EAA /* AppDelegate.swift */,
 				7F701834292ABE4900517EAA /* Beyond.xcdatamodeld */,
 				7F701837292ABE4B00517EAA /* Assets.xcassets */,
@@ -542,18 +553,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F2ECA41292D543E0098BD0B /* TripleCollageView.swift in Sources */,
+				7F15F3A32930F150009BD8D0 /* UICollectionView+Extensions.swift in Sources */,
+				7F15F38D292F58E2009BD8D0 /* UIImage+Extensions.swift in Sources */,
 				7F70186C292AE31500517EAA /* FilterViewController.swift in Sources */,
 				7F41C97A292C16CB00179F78 /* Category.swift in Sources */,
 				7F701836292ABE4900517EAA /* Beyond.xcdatamodeld in Sources */,
 				7F41C973292BD46A00179F78 /* FilterViewModel.swift in Sources */,
 				7F41C983292C24E600179F78 /* FilterCollectionViewCell.swift in Sources */,
-				7F701830292ABE4900517EAA /* ViewController.swift in Sources */,
-				7F701863292AC1F000517EAA /* DoubleCollageView.swift in Sources */,
 				7F70182C292ABE4900517EAA /* AppDelegate.swift in Sources */,
 				7F70186A292AE30600517EAA /* VideoCollectorViewController.swift in Sources */,
 				7F41C977292C143700179F78 /* Filter.swift in Sources */,
+				7F15F391292FB807009BD8D0 /* CollageTripleView.swift in Sources */,
 				7F701868292AE2F600517EAA /* CollageViewController.swift in Sources */,
+				7F15F38F292F7F79009BD8D0 /* CollageDoubleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

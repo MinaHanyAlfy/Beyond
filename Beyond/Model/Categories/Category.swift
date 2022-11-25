@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import GPUImage
+
 struct Category {
     let categoryType: [Filter]
     let image: String =  "camera.filters"

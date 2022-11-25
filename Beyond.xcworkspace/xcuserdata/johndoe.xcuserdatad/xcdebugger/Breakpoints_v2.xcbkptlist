@@ -7,63 +7,47 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "819AF625-5F96-46E5-920C-D941D85AD7B0"
+            uuid = "74FEB12B-E28B-48C3-ACB8-DC157796D575"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Beyond/Controllers/CollageViewController/CollageViewController.swift"
+            filePath = "Beyond/New Group/CollageView/CollageDoubleView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "chooseCollageAction(_:)"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "showImages(images:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "819AF625-5F96-46E5-920C-D941D85AD7B0 - b3b0e64f754ca9d4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Beyond.CollageViewController.chooseCollageAction(Any) -&gt; ()"
-                  moduleName = "Beyond"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/johndoe/Documents/iOS/Beyond/Beyond/Controllers/CollageViewController/CollageViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "49"
-                  endingLineNumber = "49"
-                  offsetFromSymbolStart = "327">
-               </Location>
-               <Location
-                  uuid = "819AF625-5F96-46E5-920C-D941D85AD7B0 - 6cb148fbf7fa73e8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (__C.UIAlertAction) -&gt; () in Beyond.CollageViewController.chooseCollageAction(Any) -&gt; ()"
-                  moduleName = "Beyond"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/johndoe/Documents/iOS/Beyond/Beyond/Controllers/CollageViewController/CollageViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "51"
-                  endingLineNumber = "51"
-                  offsetFromSymbolStart = "69">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B9808B24-847F-4515-867F-FD2370D09787"
+            uuid = "FD991490-B962-42E8-A07E-E138CFE8EA84"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Beyond/Controllers/FilterViewController/FilterViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B80A395A-E515-4BA4-A306-72203AB7999E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Beyond/Controllers/FilterViewController/FilterViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
             landmarkName = "collectionView(_:didSelectItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -71,16 +55,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D4C1D93B-8BAD-4B9F-BA87-4FD182ABFCB3"
+            uuid = "03643B98-10AE-438C-949D-967E2E2AC529"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Beyond/Controllers/FilterViewController/FilterViewController.swift"
+            filePath = "Beyond/ViewModel/FilterViewModel/FilterViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "148"
-            endingLineNumber = "148"
-            landmarkName = "collectionView(_:didSelectItemAt:)"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "filterImage(image:index:isSaved:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

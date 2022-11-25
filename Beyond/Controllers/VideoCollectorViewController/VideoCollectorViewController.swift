@@ -7,94 +7,131 @@
 
 import UIKit
 import AVFoundation
+import AVKit
 
-class VideoCollectorViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
-
-    @IBOutlet weak var imageView: UIImageView!
+class VideoCollectorViewController: UIViewController {
+    
+    @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
-    var playerAV: AVPlayer!
+    
+    var player: AVPlayer!
     let imagePickerController = UIImagePickerController()
-    var videoURL: URL?
+    var videoURL: URL?{
+        didSet{
+            DispatchQueue.main.async {
+                self.playVideo()
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionView.delegate = self
-        collectionView.dataSource = self
-    }
- 
-
-      
-     
-    
-    
-    @IBAction func ChooseVideoAction(_ sender: Any) {
         
+    }
+    
+    private func vidoPickerSetup(){
         imagePickerController.sourceType = .photoLibrary
         imagePickerController.delegate = self
         imagePickerController.mediaTypes = ["public.image", "public.movie"]
-        present(imagePickerController, animated: true, completion: nil)
-   
     }
-
-    @objc func animationDidFinish(_ notification: NSNotification) {
-            playerAV.seek(to: .zero)
-            playerAV.play()
-            playerAV.pause()
-            print(#function)
-        }
+     
+    @IBAction func ChooseVideoAction(_ sender: Any) {
     
+        //present(imagePickerController, animated: true, completion: nil)
+        playVideo()
+        
+    }
+}
+
+//MARK: - UIImagePickerControllerDelegate
+extension VideoCollectorViewController: UIImagePickerControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        videoURL = info[UIImagePickerController.InfoKey(rawValue: "UIImagePickerControllerReferenceURL")] as? URL
-        self.playvideo(videourl: videoURL?.absoluteString ?? "") 
-        print(videoURL)
+        
+        videoURL = info[UIImagePickerController.InfoKey.referenceURL] as? URL
         imagePickerController.dismiss(animated: true, completion: nil)
     }
-   
 }
 
+//MARK: - UINavigationControllerDelegate
+extension VideoCollectorViewController: UINavigationControllerDelegate {
+    
+}
 
-extension VideoCollectorViewController{
-    
-    
-    
-    func playvideo(videourl: String) {
+//MARK: - Play Video
+extension VideoCollectorViewController {
+    func playVideo() {
+        guard let videoURL = URL(string: "https://www.youtube.com/watch?v=Edp_pbG_CPI") else { return }
+        player = AVPlayer(url: videoURL)
+        player = AVPlayer(url: videoURL as URL)
+        player.actionAtItemEnd = .none
+        player.isMuted = true
         
-        guard let firstVideo = Bundle.main.path(forResource: "video", ofType:"mp4") else {
-            debugPrint("Video not found")
-            return
-        }
-        print(videourl)
-        if videourl == nil{
-            playerAV = AVPlayer(url: URL(fileURLWithPath: firstVideo))
-        }else{
-            let videoURL = URL(string: videourl)
-            playerAV = AVPlayer(url: videoURL!)
-        }
+        let playerLayer = AVPlayerLayer(player: player)
         
-        let playerLayerAV = AVPlayerLayer(player: playerAV)
-        playerLayerAV.frame = self.view.bounds
-        self.view.layer.addSublayer(playerLayerAV)
-        playerLayerAV.videoGravity = .resizeAspectFill
-        playerAV.play()
+        playerLayer.videoGravity = AVLayerVideoGravity.resize
+        playerLayer.zPosition = -1
+        playerLayer.frame = mainView.layer.bounds
         
-        // you can fatch when video ended
+        
+        mainView.layer.addSublayer(playerLayer)
+        playerLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
+        player.play()
+        
+        //loop video
         NotificationCenter.default.addObserver(self,
-                                               selector: #selector(animationDidFinish(_:)),
-                                               name: .AVPlayerItemDidPlayToEndTime,
-                                               object: playerAV.currentItem)
+                                               selector: #selector
+                                               (self.loopVideo),
+                                               name: NSNotification.Name.AVPlayerItemDidPlayToEndTime,
+                                               object: nil)
         
     }
-}
     
-extension VideoCollectorViewController: UICollectionViewDelegate, UICollectionViewDataSource{
+    @objc func loopVideo() {
+        player.seek(to: CMTime.zero)
+        player.play()
+    }
+}
+
+//MARK: - UICollectionViewDataSource
+extension VideoCollectorViewController: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+        let cell = collectionView.deqeueReusableCell(collectionViewCell: FilterCollectionViewCell.self, indexPath: indexPath)
         return cell
     }
-    
+}
+
+//MARK: - UICollectionViewDelegate
+extension VideoCollectorViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        //
+    }
+}
+
+//MARK: - Thumbnail From Video
+extension VideoCollectorViewController {
+    public func imageFromVideo(url: URL, at time: TimeInterval, completion: @escaping (UIImage?) -> Void) {
+        
+        DispatchQueue.global(qos: .background).async {
+            let asset = AVURLAsset(url: url)
+            let assetIG = AVAssetImageGenerator(asset: asset)
+            assetIG.appliesPreferredTrackTransform = true
+            assetIG.apertureMode = AVAssetImageGenerator.ApertureMode.encodedPixels
+            let cmTime = CMTime(seconds: time, preferredTimescale: 60)
+            let thumbnailImageRef: CGImage
+            do {
+                thumbnailImageRef = try assetIG.copyCGImage(at: cmTime, actualTime: nil)
+            } catch let error {
+                print("Error: \(error)")
+                return completion(nil)
+            }
+            DispatchQueue.main.async {
+                completion(UIImage(cgImage: thumbnailImageRef))
+            }
+        }
+    }
     
 }

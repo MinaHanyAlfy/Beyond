@@ -13,10 +13,17 @@ class FilterCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        clipsToBounds = true
-        layer.cornerRadius = frame.height / 4 
         
-        // Initialization code
+        setupCell()
+    }
+    
+    private func setupCell() {
+        clipsToBounds = true
+        layer.cornerRadius = frame.height / 4
+    }
+    
+    func setImage(image: UIImage) {
+        imageView.image = image
     }
     
     func changeTint(index: Int){
